@@ -1,0 +1,194 @@
+<!DOCTYPE html> 
+
+<html lang="es">
+<head> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> 
+  <meta name="description" content="Esta es una página donde se habla de biodiversidad de Cundinamarca y Boyacá">
+  <title>Páramos de Cundinamarca</title> 
+  <link href="estilos.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+
+ 
+ <div class="slider-container">
+    <div class="slider">
+        <img src="slider/imagen/1.jpg" alt="Image 1">
+        <img src="slider/imagen/2.jpg" alt="Image 2">
+        <img src="slider/imagen/3.jpg" alt="Image 3">
+        <img src="slider/imagen/4.jpg" alt="Image 4">
+    </div>
+    <div class="slider-controls"></div>
+    <button class="slider-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+    <button class="slider-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+</div>
+
+<header class="header">
+  <div class="logo">Biodiversidad</div>
+  <input type="checkbox" id ="toggle">
+  <label for="toggle"><img  class= "menu" src="img/menu.svg" alt="menu"></label>
+  <nav class="navigation"><!--etiqueta del menu-->
+   <ul><!--lista desordenada -->
+     <li><a href="index.html" target="_blank">Inicio</a></li><!--etiqueta ancla nis permite  ir a  otros  sitios y target abre una  nueva  página-->
+     <li><!--lista  item-->
+       <a href="#">Cundinamarca</a>
+       <ul> <!--lista desordenada-->
+         <li><a href="paramosc.html" target="_blank">Páramos</a></li><!--etiqueta ancla nis permite  ir a  otros  sitios y target abre una  nueva  página-->
+         <li><a href="faunac.html" target="_blank">Fauna</a></li><!--etiqueta ancla nis permite  ir a  otros  sitios y target abre una  nueva  página-->
+         <li><a href="florac.html" target="_blank">Flora</a></li><!--etiqueta ancla nis permite  ir a  otros  sitios y target abre una  nueva  página-->
+         <li><a href="grafica_familias_nombres_comunes.html" target="_blank">Gráfica</a></li><!--etiqueta ancla nis permite  ir a  otros  sitios y target abre una  nueva  página-->
+         <li><a href="mapa.html" target="_blank">Mapa</a></li><!--etiqueta ancla nis permite  ir a  otros  sitios y target abre una  nueva  página-->
+
+       </ul>
+     </li>
+     <li>
+       <a href="#">Boyacá</a>
+       <ul>
+         <li><a href="paramosb.html" target="_blank">Páramos</a></li><!--etiqueta ancla nis permite  ir a  otros  sitios y target abre una  nueva  página-->
+         <li><a href="faunab.html" target="_blank">Fauna</a></li><!--etiqueta ancla nis permite  ir a  otros  sitios y target abre una  nueva  página-->
+         <li><a href="florab.html" target="_blank">Flora</a></li><!--etiqueta ancla nis permite  ir a  otros  sitios y target abre una  nueva  página-->
+         <li><a href="mapa2.html" target="_blank">Mapa</a></li><!--etiqueta ancla nis permite  ir a  otros  sitios y target abre una  nueva  página-->
+       </ul>
+     </li>
+  
+   </ul>
+ </nav>
+ 
+ </header>
+       
+       
+       
+       
+       <section> <!--permite dividir el contenido  de la  pagina-->
+            <div class="caja1"><!--dentro de ese contenedor se  hacen otra clase, recuerden que  las  clases nos permiten manipular los elementos-->
+              <div class="h2-paramos"><!--dentro  de  caja1 se hace otra clase llamada h2 para  modificar el aspecto de varios h2-->
+                <h2>PARAMOS EN CUNDINAMARCA</h2><!--encabezado-->
+              </div>
+              <div class="p-paramos"><!--contenedor  con la  clase  p paramos el cual se  puede  modificar en  el css-->
+              <p>De los 14 complejos de páramos que son intervenidos por la Región Administrativa de Planificación Especial, 5 hacen parte del departamento <!--p etiqueta para poner texto-->
+                 de Cundinamarca.<br> Los páramos que se intervienen por parte de la RAP-E son: Altiplano Cundiboyacense, Rabanal y Río Bogotá, Cruz Verde – Sumapaz, Chingaza y Guerrero.<!--etiqueta  para  poner texto-->
+                En el departamento de Cundinamarca se localizan 2 parques nacionales, ambos correspondientes al ecosistema andino de páramo.
+            </p>
+            <div id="fig_el47721980813878304743633455"></div>
+            <script>
+            function mpld3_load_lib(url, callback){
+              var s = document.createElement('script');
+              s.src = url;
+              s.async = true;
+              s.onreadystatechange = s.onload = callback;
+              s.onerror = function(){console.warn("failed to load library " + url);};
+              document.getElementsByTagName("head")[0].appendChild(s);
+            }
+            
+            if(typeof(mpld3) !== "undefined" && mpld3._mpld3IsLoaded){
+               // already loaded: just create the figure
+               !function(mpld3){
+                   
+                   mpld3.draw_figure("fig_el47721980813878304743633455", {"width": 1000.0, "height": 600.0, "axes": [{"bbox": [0.28150000000000003, 0.10999999999999999, 0.462, 0.77], "xlim": [-1.25, 1.25], "ylim": [-1.25, 1.25], "xdomain": [-1.25, 1.25], "ydomain": [-1.25, 1.25], "xscale": "linear", "yscale": "linear", "axes": [{"position": "bottom", "nticks": 0, "tickvalues": [], "tickformat_formatter": "", "tickformat": "", "scale": "linear", "fontsize": null, "grid": {"gridOn": false}, "visible": true}, {"position": "left", "nticks": 0, "tickvalues": [], "tickformat_formatter": "", "tickformat": "", "scale": "linear", "fontsize": null, "grid": {"gridOn": false}, "visible": true}], "axesbg": "#FFFFFF", "axesbgalpha": null, "zoomable": true, "id": "el47721980816443968", "lines": [], "paths": [{"data": "data01", "xindex": 0, "yindex": 1, "coordinates": "data", "pathcodes": ["M", "C", "C", "C", "C", "L", "Z"], "id": "el47721980846893312", "dasharray": "none", "alpha": 1, "facecolor": "#1F77B4", "edgecolor": "none", "edgewidth": 1.0, "zorder": 1}, {"data": "data02", "xindex": 0, "yindex": 1, "coordinates": "data", "pathcodes": ["M", "C", "C", "L", "Z"], "id": "el47721980846889520", "dasharray": "none", "alpha": 1, "facecolor": "#FF7F0E", "edgecolor": "none", "edgewidth": 1.0, "zorder": 1}, {"data": "data03", "xindex": 0, "yindex": 1, "coordinates": "data", "pathcodes": ["M", "C", "C", "L", "Z"], "id": "el47721980846898016", "dasharray": "none", "alpha": 1, "facecolor": "#2CA02C", "edgecolor": "none", "edgewidth": 1.0, "zorder": 1}, {"data": "data04", "xindex": 0, "yindex": 1, "coordinates": "data", "pathcodes": ["M", "C", "C", "L", "Z"], "id": "el47721980847112704", "dasharray": "none", "alpha": 1, "facecolor": "#D62728", "edgecolor": "none", "edgewidth": 1.0, "zorder": 1}, {"data": "data05", "xindex": 0, "yindex": 1, "coordinates": "data", "pathcodes": ["M", "C", "C", "L", "Z"], "id": "el47721980847114384", "dasharray": "none", "alpha": 1, "facecolor": "#9467BD", "edgecolor": "none", "edgewidth": 1.0, "zorder": 1}, {"data": "data06", "xindex": 0, "yindex": 1, "coordinates": "data", "pathcodes": ["M", "C", "C", "L", "Z"], "id": "el47721980847115920", "dasharray": "none", "alpha": 1, "facecolor": "#8C564B", "edgecolor": "none", "edgewidth": 1.0, "zorder": 1}], "markers": [], "texts": [{"text": "Altiplano Cundiboyacense", "position": [-0.8313245501834298, 0.7203467861122991], "coordinates": "data", "h_anchor": "end", "v_baseline": "central", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el47721980846682096"}, {"text": "27.3%", "position": [-0.4534497546455071, 0.39291642878852673], "coordinates": "data", "h_anchor": "middle", "v_baseline": "central", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el47721980846896144"}, {"text": "P\u00e1ramo de Chingaza", "position": [-0.6963136607751618, -0.8515558031144483], "coordinates": "data", "h_anchor": "end", "v_baseline": "central", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el47721980846897056"}, {"text": "23.6%", "position": [-0.37980745133190635, -0.46448498351697176], "coordinates": "data", "h_anchor": "middle", "v_baseline": "central", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el47721980846897584"}, {"text": "Iguaque - Merch\u00e1n", "position": [0.594704914953925, -0.9253788759906101], "coordinates": "data", "h_anchor": "start", "v_baseline": "central", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el47721980846898640"}, {"text": "16.4%", "position": [0.3243844990657772, -0.5047521141766963], "coordinates": "data", "h_anchor": "middle", "v_baseline": "central", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el47721980846899168"}, {"text": "Guerrero", "position": [1.0995514114960776, -0.03141167739843891], "coordinates": "data", "h_anchor": "start", "v_baseline": "central", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el47721980847113328"}, {"text": "14.5%", "position": [0.5997553153614968, -0.017133642217330314], "coordinates": "data", "h_anchor": "middle", "v_baseline": "central", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el47721980847113904"}, {"text": "Cruz Verde - Sumapaz", "position": [0.7437924234111888, 0.8104152212761746], "coordinates": "data", "h_anchor": "start", "v_baseline": "central", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el47721980846883616"}, {"text": "12.7%", "position": [0.40570495822428476, 0.4420446661506407], "coordinates": "data", "h_anchor": "middle", "v_baseline": "central", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el47721980847115488"}, {"text": "Rabanal y r\u00edo Bogot\u00e1", "position": [0.18757446309768042, 1.083889210571642], "coordinates": "data", "h_anchor": "start", "v_baseline": "central", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el47721980847116544"}, {"text": "5.5%", "position": [0.10231334350782567, 0.591212296675441], "coordinates": "data", "h_anchor": "middle", "v_baseline": "central", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el47721980847117120"}, {"text": "Distribuci\u00f3n de Complejos en P\u00e1ramos de Cundinamarca", "position": [0.5, 1.018037518037518], "coordinates": "axes", "h_anchor": "middle", "v_baseline": "auto", "rotation": -0.0, "fontsize": 12.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el47721980846683920"}], "collections": [], "images": [], "sharex": [], "sharey": []}], "data": {"data01": [[6.123233995736766e-17, 1.0], [-0.14334341469569553, 1.0], [-0.2850252690450953, 0.9691789981950668], [-0.41541502461541746, 0.9096319900507964], [-0.5458047801857396, 0.850084981906526], [-0.661879620088203, 0.7631924416872315], [-0.7557495910758455, 0.6548607146475443], [-0.849619562063488, 0.546528987607857], [-0.9191084829446988, 0.4192695208522991], [-0.9594929844053762, 0.2817325200910687], [-0.9998774858660536, 0.14419551932983826], [-1.0102213367389068, -0.0004305044461903884], [-0.989821434613035, -0.142314888822615], [0.0, 0.0]], "data02": [[-0.989821434613035, -0.142314888822615], [-0.9541963135959503, -0.3900929581808107], [-0.8268002214758771, -0.6156821539315536], [-0.6330124188865106, -0.7741416391949529], [-0.43922461629714415, -0.9326011244583523], [-0.19282892296493453, -1.0126599268118297], [0.05708884995192065, -0.9983691016909363], [0.0, 0.0]], "data03": [[0.05708884995192065, -0.9983691016909363], [0.22910527004920936, -0.9885328401524249], [0.39569502036887644, -0.9344045439098716], [0.5406408317762954, -0.8412535236278272], [0.6855866431837143, -0.7481025033457829], [0.8040273522013573, -0.6190528392118199], [0.8844329286145842, -0.4666673277423969], [0.0, 0.0]], "data04": [[0.8844329286145842, -0.4666673277423969], [0.955823303570582, -0.33136752284137744], [0.9952237086637399, -0.1814728424756811], [0.9995921922691614, -0.02855607036221719], [1.003960675874583, 0.12436070175124672], [0.9731818437514563, 0.2762602429506061], [0.9096320094977762, 0.4154149820324702], [0.0, 0.0]], "data05": [[0.9096320094977762, 0.4154149820324702], [0.8540818830711296, 0.5370528028017184], [0.7746934325662881, 0.646321639376379], [0.6761749303738086, 0.7367411102510671], [0.5776564281813291, 0.8271605811257553], [0.461994757481505, 0.8969071412621897], [0.33604943810800003, 0.9418443476218867], [0.0, 0.0]], "data06": [[0.33604943810800003, 0.9418443476218867], [0.28221852479375265, 0.9610511817636102], [0.2268399275766133, 0.9756076654900937], [0.17052223917970946, 0.9853538277924017], [0.11420455078280561, 0.9950999900947096], [0.05715483406688568, 0.9999999973243902], [4.681337836905489e-08, 0.9999999999999989], [0.0, 0.0]]}, "id": "el47721980813878304", "plugins": [{"type": "reset"}, {"type": "zoom", "button": true, "enabled": false}, {"type": "boxzoom", "button": true, "enabled": false}]});
+               }(mpld3);
+            }else if(typeof define === "function" && define.amd){
+               // require.js is available: use it to load d3/mpld3
+               require.config({paths: {d3: "https://d3js.org/d3.v5"}});
+               require(["d3"], function(d3){
+                  window.d3 = d3;
+                  mpld3_load_lib("https://mpld3.github.io/js/mpld3.v0.5.10.js", function(){
+                     
+                     mpld3.draw_figure("fig_el47721980813878304743633455", {"width": 1000.0, "height": 600.0, "axes": [{"bbox": [0.28150000000000003, 0.10999999999999999, 0.462, 0.77], "xlim": [-1.25, 1.25], "ylim": [-1.25, 1.25], "xdomain": [-1.25, 1.25], "ydomain": [-1.25, 1.25], "xscale": "linear", "yscale": "linear", "axes": [{"position": "bottom", "nticks": 0, "tickvalues": [], "tickformat_formatter": "", "tickformat": "", "scale": "linear", "fontsize": null, "grid": {"gridOn": false}, "visible": true}, {"position": "left", "nticks": 0, "tickvalues": [], "tickformat_formatter": "", "tickformat": "", "scale": "linear", "fontsize": null, "grid": {"gridOn": false}, "visible": true}], "axesbg": "#FFFFFF", "axesbgalpha": null, "zoomable": true, "id": "el47721980816443968", "lines": [], "paths": [{"data": "data01", "xindex": 0, "yindex": 1, "coordinates": "data", "pathcodes": ["M", "C", "C", "C", "C", "L", "Z"], "id": "el47721980846893312", "dasharray": "none", "alpha": 1, "facecolor": "#1F77B4", "edgecolor": "none", "edgewidth": 1.0, "zorder": 1}, {"data": "data02", "xindex": 0, "yindex": 1, "coordinates": "data", "pathcodes": ["M", "C", "C", "L", "Z"], "id": "el47721980846889520", "dasharray": "none", "alpha": 1, "facecolor": "#FF7F0E", "edgecolor": "none", "edgewidth": 1.0, "zorder": 1}, {"data": "data03", "xindex": 0, "yindex": 1, "coordinates": "data", "pathcodes": ["M", "C", "C", "L", "Z"], "id": "el47721980846898016", "dasharray": "none", "alpha": 1, "facecolor": "#2CA02C", "edgecolor": "none", "edgewidth": 1.0, "zorder": 1}, {"data": "data04", "xindex": 0, "yindex": 1, "coordinates": "data", "pathcodes": ["M", "C", "C", "L", "Z"], "id": "el47721980847112704", "dasharray": "none", "alpha": 1, "facecolor": "#D62728", "edgecolor": "none", "edgewidth": 1.0, "zorder": 1}, {"data": "data05", "xindex": 0, "yindex": 1, "coordinates": "data", "pathcodes": ["M", "C", "C", "L", "Z"], "id": "el47721980847114384", "dasharray": "none", "alpha": 1, "facecolor": "#9467BD", "edgecolor": "none", "edgewidth": 1.0, "zorder": 1}, {"data": "data06", "xindex": 0, "yindex": 1, "coordinates": "data", "pathcodes": ["M", "C", "C", "L", "Z"], "id": "el47721980847115920", "dasharray": "none", "alpha": 1, "facecolor": "#8C564B", "edgecolor": "none", "edgewidth": 1.0, "zorder": 1}], "markers": [], "texts": [{"text": "Altiplano Cundiboyacense", "position": [-0.8313245501834298, 0.7203467861122991], "coordinates": "data", "h_anchor": "end", "v_baseline": "central", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el47721980846682096"}, {"text": "27.3%", "position": [-0.4534497546455071, 0.39291642878852673], "coordinates": "data", "h_anchor": "middle", "v_baseline": "central", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el47721980846896144"}, {"text": "P\u00e1ramo de Chingaza", "position": [-0.6963136607751618, -0.8515558031144483], "coordinates": "data", "h_anchor": "end", "v_baseline": "central", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el47721980846897056"}, {"text": "23.6%", "position": [-0.37980745133190635, -0.46448498351697176], "coordinates": "data", "h_anchor": "middle", "v_baseline": "central", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el47721980846897584"}, {"text": "Iguaque - Merch\u00e1n", "position": [0.594704914953925, -0.9253788759906101], "coordinates": "data", "h_anchor": "start", "v_baseline": "central", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el47721980846898640"}, {"text": "16.4%", "position": [0.3243844990657772, -0.5047521141766963], "coordinates": "data", "h_anchor": "middle", "v_baseline": "central", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el47721980846899168"}, {"text": "Guerrero", "position": [1.0995514114960776, -0.03141167739843891], "coordinates": "data", "h_anchor": "start", "v_baseline": "central", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el47721980847113328"}, {"text": "14.5%", "position": [0.5997553153614968, -0.017133642217330314], "coordinates": "data", "h_anchor": "middle", "v_baseline": "central", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el47721980847113904"}, {"text": "Cruz Verde - Sumapaz", "position": [0.7437924234111888, 0.8104152212761746], "coordinates": "data", "h_anchor": "start", "v_baseline": "central", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el47721980846883616"}, {"text": "12.7%", "position": [0.40570495822428476, 0.4420446661506407], "coordinates": "data", "h_anchor": "middle", "v_baseline": "central", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el47721980847115488"}, {"text": "Rabanal y r\u00edo Bogot\u00e1", "position": [0.18757446309768042, 1.083889210571642], "coordinates": "data", "h_anchor": "start", "v_baseline": "central", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el47721980847116544"}, {"text": "5.5%", "position": [0.10231334350782567, 0.591212296675441], "coordinates": "data", "h_anchor": "middle", "v_baseline": "central", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el47721980847117120"}, {"text": "Distribuci\u00f3n de Complejos en P\u00e1ramos de Cundinamarca", "position": [0.5, 1.018037518037518], "coordinates": "axes", "h_anchor": "middle", "v_baseline": "auto", "rotation": -0.0, "fontsize": 12.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el47721980846683920"}], "collections": [], "images": [], "sharex": [], "sharey": []}], "data": {"data01": [[6.123233995736766e-17, 1.0], [-0.14334341469569553, 1.0], [-0.2850252690450953, 0.9691789981950668], [-0.41541502461541746, 0.9096319900507964], [-0.5458047801857396, 0.850084981906526], [-0.661879620088203, 0.7631924416872315], [-0.7557495910758455, 0.6548607146475443], [-0.849619562063488, 0.546528987607857], [-0.9191084829446988, 0.4192695208522991], [-0.9594929844053762, 0.2817325200910687], [-0.9998774858660536, 0.14419551932983826], [-1.0102213367389068, -0.0004305044461903884], [-0.989821434613035, -0.142314888822615], [0.0, 0.0]], "data02": [[-0.989821434613035, -0.142314888822615], [-0.9541963135959503, -0.3900929581808107], [-0.8268002214758771, -0.6156821539315536], [-0.6330124188865106, -0.7741416391949529], [-0.43922461629714415, -0.9326011244583523], [-0.19282892296493453, -1.0126599268118297], [0.05708884995192065, -0.9983691016909363], [0.0, 0.0]], "data03": [[0.05708884995192065, -0.9983691016909363], [0.22910527004920936, -0.9885328401524249], [0.39569502036887644, -0.9344045439098716], [0.5406408317762954, -0.8412535236278272], [0.6855866431837143, -0.7481025033457829], [0.8040273522013573, -0.6190528392118199], [0.8844329286145842, -0.4666673277423969], [0.0, 0.0]], "data04": [[0.8844329286145842, -0.4666673277423969], [0.955823303570582, -0.33136752284137744], [0.9952237086637399, -0.1814728424756811], [0.9995921922691614, -0.02855607036221719], [1.003960675874583, 0.12436070175124672], [0.9731818437514563, 0.2762602429506061], [0.9096320094977762, 0.4154149820324702], [0.0, 0.0]], "data05": [[0.9096320094977762, 0.4154149820324702], [0.8540818830711296, 0.5370528028017184], [0.7746934325662881, 0.646321639376379], [0.6761749303738086, 0.7367411102510671], [0.5776564281813291, 0.8271605811257553], [0.461994757481505, 0.8969071412621897], [0.33604943810800003, 0.9418443476218867], [0.0, 0.0]], "data06": [[0.33604943810800003, 0.9418443476218867], [0.28221852479375265, 0.9610511817636102], [0.2268399275766133, 0.9756076654900937], [0.17052223917970946, 0.9853538277924017], [0.11420455078280561, 0.9950999900947096], [0.05715483406688568, 0.9999999973243902], [4.681337836905489e-08, 0.9999999999999989], [0.0, 0.0]]}, "id": "el47721980813878304", "plugins": [{"type": "reset"}, {"type": "zoom", "button": true, "enabled": false}, {"type": "boxzoom", "button": true, "enabled": false}]});
+                  });
+                });
+            }else{
+                // require.js not available: dynamically load d3 & mpld3
+                mpld3_load_lib("https://d3js.org/d3.v5.js", function(){
+                     mpld3_load_lib("https://mpld3.github.io/js/mpld3.v0.5.10.js", function(){
+                             
+                             mpld3.draw_figure("fig_el47721980813878304743633455", {"width": 1000.0, "height": 600.0, "axes": [{"bbox": [0.28150000000000003, 0.10999999999999999, 0.462, 0.77], "xlim": [-1.25, 1.25], "ylim": [-1.25, 1.25], "xdomain": [-1.25, 1.25], "ydomain": [-1.25, 1.25], "xscale": "linear", "yscale": "linear", "axes": [{"position": "bottom", "nticks": 0, "tickvalues": [], "tickformat_formatter": "", "tickformat": "", "scale": "linear", "fontsize": null, "grid": {"gridOn": false}, "visible": true}, {"position": "left", "nticks": 0, "tickvalues": [], "tickformat_formatter": "", "tickformat": "", "scale": "linear", "fontsize": null, "grid": {"gridOn": false}, "visible": true}], "axesbg": "#FFFFFF", "axesbgalpha": null, "zoomable": true, "id": "el47721980816443968", "lines": [], "paths": [{"data": "data01", "xindex": 0, "yindex": 1, "coordinates": "data", "pathcodes": ["M", "C", "C", "C", "C", "L", "Z"], "id": "el47721980846893312", "dasharray": "none", "alpha": 1, "facecolor": "#1F77B4", "edgecolor": "none", "edgewidth": 1.0, "zorder": 1}, {"data": "data02", "xindex": 0, "yindex": 1, "coordinates": "data", "pathcodes": ["M", "C", "C", "L", "Z"], "id": "el47721980846889520", "dasharray": "none", "alpha": 1, "facecolor": "#FF7F0E", "edgecolor": "none", "edgewidth": 1.0, "zorder": 1}, {"data": "data03", "xindex": 0, "yindex": 1, "coordinates": "data", "pathcodes": ["M", "C", "C", "L", "Z"], "id": "el47721980846898016", "dasharray": "none", "alpha": 1, "facecolor": "#2CA02C", "edgecolor": "none", "edgewidth": 1.0, "zorder": 1}, {"data": "data04", "xindex": 0, "yindex": 1, "coordinates": "data", "pathcodes": ["M", "C", "C", "L", "Z"], "id": "el47721980847112704", "dasharray": "none", "alpha": 1, "facecolor": "#D62728", "edgecolor": "none", "edgewidth": 1.0, "zorder": 1}, {"data": "data05", "xindex": 0, "yindex": 1, "coordinates": "data", "pathcodes": ["M", "C", "C", "L", "Z"], "id": "el47721980847114384", "dasharray": "none", "alpha": 1, "facecolor": "#9467BD", "edgecolor": "none", "edgewidth": 1.0, "zorder": 1}, {"data": "data06", "xindex": 0, "yindex": 1, "coordinates": "data", "pathcodes": ["M", "C", "C", "L", "Z"], "id": "el47721980847115920", "dasharray": "none", "alpha": 1, "facecolor": "#8C564B", "edgecolor": "none", "edgewidth": 1.0, "zorder": 1}], "markers": [], "texts": [{"text": "Altiplano Cundiboyacense", "position": [-0.8313245501834298, 0.7203467861122991], "coordinates": "data", "h_anchor": "end", "v_baseline": "central", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el47721980846682096"}, {"text": "27.3%", "position": [-0.4534497546455071, 0.39291642878852673], "coordinates": "data", "h_anchor": "middle", "v_baseline": "central", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el47721980846896144"}, {"text": "P\u00e1ramo de Chingaza", "position": [-0.6963136607751618, -0.8515558031144483], "coordinates": "data", "h_anchor": "end", "v_baseline": "central", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el47721980846897056"}, {"text": "23.6%", "position": [-0.37980745133190635, -0.46448498351697176], "coordinates": "data", "h_anchor": "middle", "v_baseline": "central", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el47721980846897584"}, {"text": "Iguaque - Merch\u00e1n", "position": [0.594704914953925, -0.9253788759906101], "coordinates": "data", "h_anchor": "start", "v_baseline": "central", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el47721980846898640"}, {"text": "16.4%", "position": [0.3243844990657772, -0.5047521141766963], "coordinates": "data", "h_anchor": "middle", "v_baseline": "central", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el47721980846899168"}, {"text": "Guerrero", "position": [1.0995514114960776, -0.03141167739843891], "coordinates": "data", "h_anchor": "start", "v_baseline": "central", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el47721980847113328"}, {"text": "14.5%", "position": [0.5997553153614968, -0.017133642217330314], "coordinates": "data", "h_anchor": "middle", "v_baseline": "central", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el47721980847113904"}, {"text": "Cruz Verde - Sumapaz", "position": [0.7437924234111888, 0.8104152212761746], "coordinates": "data", "h_anchor": "start", "v_baseline": "central", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el47721980846883616"}, {"text": "12.7%", "position": [0.40570495822428476, 0.4420446661506407], "coordinates": "data", "h_anchor": "middle", "v_baseline": "central", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el47721980847115488"}, {"text": "Rabanal y r\u00edo Bogot\u00e1", "position": [0.18757446309768042, 1.083889210571642], "coordinates": "data", "h_anchor": "start", "v_baseline": "central", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el47721980847116544"}, {"text": "5.5%", "position": [0.10231334350782567, 0.591212296675441], "coordinates": "data", "h_anchor": "middle", "v_baseline": "central", "rotation": -0.0, "fontsize": 10.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el47721980847117120"}, {"text": "Distribuci\u00f3n de Complejos en P\u00e1ramos de Cundinamarca", "position": [0.5, 1.018037518037518], "coordinates": "axes", "h_anchor": "middle", "v_baseline": "auto", "rotation": -0.0, "fontsize": 12.0, "color": "#000000", "alpha": 1, "zorder": 3, "id": "el47721980846683920"}], "collections": [], "images": [], "sharex": [], "sharey": []}], "data": {"data01": [[6.123233995736766e-17, 1.0], [-0.14334341469569553, 1.0], [-0.2850252690450953, 0.9691789981950668], [-0.41541502461541746, 0.9096319900507964], [-0.5458047801857396, 0.850084981906526], [-0.661879620088203, 0.7631924416872315], [-0.7557495910758455, 0.6548607146475443], [-0.849619562063488, 0.546528987607857], [-0.9191084829446988, 0.4192695208522991], [-0.9594929844053762, 0.2817325200910687], [-0.9998774858660536, 0.14419551932983826], [-1.0102213367389068, -0.0004305044461903884], [-0.989821434613035, -0.142314888822615], [0.0, 0.0]], "data02": [[-0.989821434613035, -0.142314888822615], [-0.9541963135959503, -0.3900929581808107], [-0.8268002214758771, -0.6156821539315536], [-0.6330124188865106, -0.7741416391949529], [-0.43922461629714415, -0.9326011244583523], [-0.19282892296493453, -1.0126599268118297], [0.05708884995192065, -0.9983691016909363], [0.0, 0.0]], "data03": [[0.05708884995192065, -0.9983691016909363], [0.22910527004920936, -0.9885328401524249], [0.39569502036887644, -0.9344045439098716], [0.5406408317762954, -0.8412535236278272], [0.6855866431837143, -0.7481025033457829], [0.8040273522013573, -0.6190528392118199], [0.8844329286145842, -0.4666673277423969], [0.0, 0.0]], "data04": [[0.8844329286145842, -0.4666673277423969], [0.955823303570582, -0.33136752284137744], [0.9952237086637399, -0.1814728424756811], [0.9995921922691614, -0.02855607036221719], [1.003960675874583, 0.12436070175124672], [0.9731818437514563, 0.2762602429506061], [0.9096320094977762, 0.4154149820324702], [0.0, 0.0]], "data05": [[0.9096320094977762, 0.4154149820324702], [0.8540818830711296, 0.5370528028017184], [0.7746934325662881, 0.646321639376379], [0.6761749303738086, 0.7367411102510671], [0.5776564281813291, 0.8271605811257553], [0.461994757481505, 0.8969071412621897], [0.33604943810800003, 0.9418443476218867], [0.0, 0.0]], "data06": [[0.33604943810800003, 0.9418443476218867], [0.28221852479375265, 0.9610511817636102], [0.2268399275766133, 0.9756076654900937], [0.17052223917970946, 0.9853538277924017], [0.11420455078280561, 0.9950999900947096], [0.05715483406688568, 0.9999999973243902], [4.681337836905489e-08, 0.9999999999999989], [0.0, 0.0]]}, "id": "el47721980813878304", "plugins": [{"type": "reset"}, {"type": "zoom", "button": true, "enabled": false}, {"type": "boxzoom", "button": true, "enabled": false}]});
+                        })
+                     });
+            }
+            </script> 
+        <!--etiqueta  p  es de  parrafos y la  etiqueta b es negrilla-->
+          </div>
+         
+         
+            </div>
+          
+     
+      
+        </section>
+
+    <section>
+            <div class="caja2"><!--contenedor-->
+                <div class="h2-paramos">
+            <h2>PARQUE NACIONAL SUMAPAZ</h2>
+                </div>
+                <div class="p-paramos"> 
+            <p>El Páramo del Sumapaz es el páramo más grande del mundo.1 Está situado en la provincia del Sumapaz, en el departamento de Cundinamarca y la localidad de Sumapaz del Distrito Capital, en Colombia.23 Fue declarado Parque Nacional Natural en 1977.4<br><br>
+              El páramo tiene una extensión de 333.420 hectáreas. Es una de las fuentes hídricas más importantes del país. Dentro de su ecosistema habitan osos de anteojos, venados, águila y cóndores, además de otras especies.<br><br>
+              Aloja gran cantidad de lagunas todas ellas de origen glacial. Entre ellas destacan: lagunas de Boca Grande, laguna de Chisacá, laguna Larga, laguna la Guitarra, laguna el Cajón, laguna del Nevado. Adicionalmente, alberga uno de los picos más altos en las cercanías de la capital el Cerro Nevado del Sumapaz con una altura de 4,306 km. Hace parte de las 64 áreas naturales protegidas pertenecientes al Sistema de Parques Nacionales Naturales (SPNN).5<br><br>
+              
+       </p>
+
+
+       <!--tarjeta rotatoria -->
+       <div class="tarjeta"> <!--se hace  una  contenedor con el nombre de tarjeta -->
+        <div class="contenido"> <!--dentro  de ese  contenedor hacemos otro  llamado contenido-->
+          <div class="cara frente"> <!--se hace un contenedor  el  cual  va  tener  la imagen que se  va  ver de   frente -->
+            <img src="img/sumapaz2.jpg" alt="Imagen Frontal">
+          </div>
+          <div class="cara trasera"> <!--otro  contenedor es la  parte trasera de la   tarjeta-->
+            <div class="texto"> <!--este  contenedor lleva el texto  -->
+              <h2>Páramo de Sumapaz</h2>
+              <p>En el Parque Nacional Natural Sumapaz se encuentran representados dos de los principales ecosistemas de las montañas tropicales: el páramo y los bosques andinos.</p>
+            </div>
+          </div>
+        </div>
+        </div>
+          </div>
+        </div>
+
+                  
+    
+    
+                
+             
+            </section>
+            
+        <section> <!--permite  dividir el contenido -->
+            <div class="caja1"> <!--caja contenedor -->
+              <div class="h2-paramos"><!--permite  modificar en el css  la  etiqueta  h2 , que este dentro  de este  contenedor-->
+                
+                <h2>PARQUE NACIONAL CHINGAZA</h2><!--encabezado-->
+              </div>
+              <div class="parrafo1"> <!--clase para manipular los  parrafos-->
+              <p>El Parque Nacional Natural Chingaza se encuentra ubicado en la cordillera Oriental en la región andina en Colombia. Su superficie hace parte de los departamentos de Cundinamarca y Meta. 
+                Fue creado en mayo de 1977 y aprobado por la resolución n.º 154 del 6 de junio del mismo año. Se extiende en las jurisdicciones de los municipios de La Calera, Fómeque, Guasca y San Juanito, y Gachalá.<br><br>El parque tiene una extensión de 76.600 hectáreas y alturas entre 800 y 4.050 m s. n. m. Su máxima altura se encuentra en la Serranía de Los Órganos, en el cerro San Luis, frontera entre los municipios de Fómeque, San Juanito y El Calvario y entre los departamentos de Cundinamarca y el Meta.
+            </p>
+            <section>
+
+
+              <!--Galeria de  fotos-->
+            </section>
+              </div>
+         
+    </div>   
+        </section>
+        <!--footer  o pie de pagina-->
+        <footer >
+          <div class="osofooter">
+           <img src="img/o1.png" alt="Imagen 1">
+             </div>
+               <div class="footer-icons">
+                 <a href="https://www.facebook.com" target="_blank"><img src="img/logo1.png" alt="Icono 1"></a>
+                 <a href="https://www.instagram.com" target="_blank"><img src="img/logo2.png" alt="Icono 2"></a>
+                 <a href="https://www.youtube.com" target="_blank"><img src="img/logo3.png" alt="Icono 3"></a>
+             
+               </div>
+           </footer>
+           <script src="script.js"  ></script>
+    </body>
+    </html>
